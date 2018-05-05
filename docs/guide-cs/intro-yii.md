@@ -1,60 +1,68 @@
-What is Yii
-===========
+Co je Yii
+=========
 
-Yii is a high performance, component-based PHP framework for rapidly developing modern Web applications.
-The name Yii (pronounced `Yee` or `[ji:]`) means "simple and evolutionary" in Chinese. It can also
-be thought of as an acronym for **Yes It Is**!
+Yii je výkonný na komponentách založený framework pro PHP pro rychlý vývoj
+moderních webových aplikací. Jméno Yii (vyslovováno `Jí` `[ji:]`) v čínštině znamená
+„jednoduchý a evoluční“. Může se tím také myslet akronym pro anglický výraz „Yes
+It Is!“, který znamená **Ano to je!**
 
+Na co je Yii nejlepší?
+----------------------
 
-What is Yii Best for?
----------------------
+Yii je generický webový framework, to znamená že může být použit pro vývoj
+webových aplikací různých druhů, které běží na PHP. Díky tomu, že jeho
+architektura je založená na komponentách a má sofistikovanou podporu pro
+caching, je obzvláště vhodný pro vývoj větších aplikací jako jsou portály, fóra,
+redakční systémy, RESTful webové služby a další.
 
-Yii is a generic Web programming framework, meaning that it can be used for developing all kinds
-of Web applications using PHP. Because of its component-based architecture and sophisticated caching
-support, it is especially suitable for developing large-scale applications such as portals, forums, content
-management systems (CMS), e-commerce projects, RESTful Web services, and so on.
+V čem je Yii podobné ostatním frameworkům
+-----------------------------------------
 
+Pokud už znáte jiný framework, určitě oceníte, v čem je Yii podobný:
 
-How does Yii Compare with Other Frameworks?
--------------------------------------------
+-   Jako většina PHP frameworků je i Yii postaven na architektuře MVC
+    (Model-View-Controller).
 
-If you're already familiar with another framework, you may appreciate knowing how Yii compares:
+-   Yii dodržuje pravidlo, že kód by měl být jednoduchý a elegantní. Nikdy se
+    nepokusí toto pravidlo porušit jen proto, aby striktně dodržovalo nějaký
+    architektonický návrh.
 
-- Like most PHP frameworks, Yii implements the MVC (Model-View-Controller) architectural pattern and promotes code
-  organization based on that pattern.
-- Yii takes the philosophy that code should be written in a simple yet elegant way. Yii will never try to
-  over-design things mainly for the purpose of strictly following some design pattern.
-- Yii is a full-stack framework providing many proven and ready-to-use features: query builders
-  and ActiveRecord for both relational and NoSQL databases; RESTful API development support; multi-tier
-  caching support; and more.
-- Yii is extremely extensible. You can customize or replace nearly every piece of the core's code. You can also
-  take advantage of Yii's solid extension architecture to use or develop redistributable extensions.
-- High performance is always a primary goal of Yii.
+-   Yii je kompletní ucelený framework, který obsahuje mnoho pomocných a
+    osvědčených nástrojů: Query Builder a ActiveRecord, oba to jsou relační a NoSQL
+    nástroje pro práci s databázemi, podpora pro vývoj RESTful API a další.
 
-Yii is not a one-man show, it is backed up by a [strong core developer team](http://www.yiiframework.com/team/), as well as a large community
-of professionals constantly contributing to Yii's development. The Yii developer team
-keeps a close eye on the latest Web development trends and on the best practices and features
-found in other frameworks and projects. The most relevant best practices and features found elsewhere are regularly incorporated into the core framework and exposed
-via simple and elegant interfaces.
+-   Yii je až extrémně rozšiřitelný. Můžete si upravit nebo nahradit prakticky
+    jakoukoliv část frameworku. Můžete také využít vynikající rozšiřitelnou
+    architekturu a používat nebo vyvíjet publikovatelná rozšíření.
 
+-   Hlavním cílem Yii byl vždy a je vysoký výkon.
 
-Yii Versions
-------------
+Yii není vyvíjen pouze jedním člověkem, ale celým [programátorským týmem
+vyvíjející jádro frameworku](http://www.yiiframework.com/team/). Stejně tak je
+neustále podporován velkou komunitou profesionálů, kteří neustále do Yii
+přispívají vlastním kódem. Programátorský tým Yii bez přestání sleduje vývoj
+aktuálních trendů v oblasti vývoje webových aplikací, používaných nejlepších
+praktik a nové funkce, které lze nalézt v jiných frameworcích a projektech.
+Nejdůležitější praktiky a funkce, které se používají jinde, se neustále
+přidávají do jádra frameworku takovým způsobem, aby se daly elegantně používat.
 
-Yii currently has two major versions available: 1.1 and 2.0. Version 1.1 is the old generation and is now in maintenance mode. Version 2.0 is a complete rewrite of Yii, adopting the latest
-technologies and protocols, including Composer, PSR, namespaces, traits, and so forth. Version 2.0 represents the current
-generation of the framework and will receive the main development efforts over the next few years.
-This guide is mainly about version 2.0.
+Yii verze
+---------
 
+Aktuálně jsou přístupné dvě hlavní verze: 1.1 a 2.0. Verze 1.1 je zastaralá
+verze, která se teď již jen udržuje. Verze 2.0 je kompletně přepsaný framework,
+jež používá nejnovější technologie a standardy jako je Composer, PSR, jmenné
+prostory, traity a dále. Verze 2.0 je aktuální verze frameworku, a ještě se bude
+rozšiřovat a vylepšovat několik příštích let. Tato příručka je hlavně o verzi
+2.0.
 
-Requirements and Prerequisites
-------------------------------
+Požadavky a předpoklady
+-----------------------
 
-Yii 2.0 requires PHP 5.4.0 or above and runs best with the latest version of PHP 7. You can find more detailed
-requirements for individual features by running the requirement checker included in every Yii release.
+Yii 2.0 vyžaduje PHP verze 5.4.0 nebo vyšší a nejlépe funguje na nejnovější
+verzi PHP 7. Pokud potřebujete zjistit detailnější požadavky pro konkrétní
+funkce, stačí spustit „requirement checker“, který je součástí každé uvolněné
+verze Yii.
 
-Using Yii requires basic knowledge of object-oriented programming (OOP), as Yii is a pure OOP-based framework.
-Yii 2.0 also makes use of the latest features of PHP, such as [namespaces](http://www.php.net/manual/en/language.namespaces.php)
-and [traits](http://www.php.net/manual/en/language.oop5.traits.php). Understanding these concepts will help
-you more easily pick up Yii 2.0.
-
+Pro používání Yii potřebujete základní znalosti objektově orientovaného
+programování (OOP) v PHP, protože Yii je čistě objektový framework.
