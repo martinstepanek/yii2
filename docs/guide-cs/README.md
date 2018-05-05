@@ -1,121 +1,121 @@
-The Definitive Guide to Yii 2.0
-===============================
+Příručka pro Yii 2.0
+====================
 
-This tutorial is released under the [Terms of Yii Documentation](http://www.yiiframework.com/doc/terms/).
+Tento návod je publikován pod [Podmínkami Yii dokumentace](http://www.yiiframework.com/doc/terms/).
 
-All Rights Reserved.
+Všechna práva vyhrazena.
 
 2014 (c) Yii Software LLC.
 
 
-Introduction
-------------
+Úvod
+----
 
-* [About Yii](intro-yii.md)
-* [Upgrading from Version 1.1](intro-upgrade-from-v1.md)
-
-
-Getting Started
----------------
-
-* [What do you need to know](start-prerequisites.md)
-* [Installing Yii](start-installation.md)
-* [Running Applications](start-workflow.md)
-* [Saying Hello](start-hello.md)
-* [Working with Forms](start-forms.md)
-* [Working with Databases](start-databases.md)
-* [Generating Code with Gii](start-gii.md)
-* [Looking Ahead](start-looking-ahead.md)
+* [O Yii](intro-yii.md)
+* [Přechod z verze 1.1](intro-upgrade-from-v1.md)
 
 
-Application Structure
----------------------
+Začínáme
+--------
 
-* [Application Structure Overview](structure-overview.md)
-* [Entry Scripts](structure-entry-scripts.md)
-* [Applications](structure-applications.md)
-* [Application Components](structure-application-components.md)
-* [Controllers](structure-controllers.md)
-* [Models](structure-models.md)
-* [Views](structure-views.md)
-* [Modules](structure-modules.md)
-* [Filters](structure-filters.md)
-* [Widgets](structure-widgets.md)
-* [Assets](structure-assets.md)
-* [Extensions](structure-extensions.md)
+* [Co potřebujete vědět](start-prerequisites.md)
+* [Instalace Yii](start-installation.md)
+* [Spouštění aplikace](start-workflow.md)
+* [První stránka](start-hello.md)
+* [Práce s formuláři](start-forms.md)
+* [Práce s databázemi](start-databases.md)
+* [Generování kódu pomocí Gii](start-gii.md)
+* [Co dále](start-looking-ahead.md)
 
 
-Handling Requests
------------------
+Struktura aplikace
+------------------
 
-* [Request Handling Overview](runtime-overview.md)
-* [Bootstrapping](runtime-bootstrapping.md)
-* [Routing and URL Creation](runtime-routing.md)
-* [Requests](runtime-requests.md)
-* [Responses](runtime-responses.md)
-* [Sessions and Cookies](runtime-sessions-cookies.md)
-* [Handling Errors](runtime-handling-errors.md)
-* [Logging](runtime-logging.md)
-
-
-Key Concepts
-------------
-
-* [Components](concept-components.md)
-* [Properties](concept-properties.md)
-* [Events](concept-events.md)
-* [Behaviors](concept-behaviors.md)
-* [Configurations](concept-configurations.md)
-* [Aliases](concept-aliases.md)
-* [Class Autoloading](concept-autoloading.md)
-* [Service Locator](concept-service-locator.md)
-* [Dependency Injection Container](concept-di-container.md)
+* [Přehled struktury aplikace](structure-overview.md)
+* [Spouštěcí scripty](structure-entry-scripts.md)
+* [Aplikace](structure-applications.md)
+* [Komponenty aplikace](structure-application-components.md)
+* [Kontrolery](structure-controllers.md)
+* [Modely](structure-models.md)
+* [Pohledy](structure-views.md)
+* [Moduly](structure-modules.md)
+* [Filtry](structure-filters.md)
+* [Widgety](structure-widgets.md)
+* [Assety](structure-assets.md)
+* [Rozšíření](structure-extensions.md)
 
 
-Working with Databases
-----------------------
+Zpracování požadavků
+--------------------
 
-* [Database Access Objects](db-dao.md): Connecting to a database, basic queries, transactions, and schema manipulation
-* [Query Builder](db-query-builder.md): Querying the database using a simple abstraction layer
-* [Active Record](db-active-record.md): The Active Record ORM, retrieving and manipulating records, and defining relations
-* [Migrations](db-migrations.md): Apply version control to your databases in a team development environment
+* [Přehled zpracování požadavků](runtime-overview.md)
+* [Příprava prostředí](runtime-bootstrapping.md)
+* [Routování a tvorba URL](runtime-routing.md)
+* [Požadavky](runtime-requests.md)
+* [Odpovědi](runtime-responses.md)
+* [Sessions a cookies](runtime-sessions-cookies.md)
+* [Zpracování errorů](runtime-handling-errors.md)
+* [Logování](runtime-logging.md)
+
+
+Klíčové koncepty
+----------------
+
+* [Komponenty](concept-components.md)
+* [Vlastnosti](concept-properties.md)
+* [Události](concept-events.md)
+* [Chování](concept-behaviors.md)
+* [Konfigurace](concept-configurations.md)
+* [Aliasy](concept-aliases.md)
+* [Automatické načítání tříd](concept-autoloading.md)
+* [Správce služeb](concept-service-locator.md)
+* [Předávání závislostí](concept-di-container.md)
+
+
+Práce s databázemi
+------------------
+
+* [Database Access Objects](db-dao.md): Připojení k databázi, základní dotazy, transakce a manipulace se schématem databáze
+* [Query Builder](db-query-builder.md): Dotazování databáze pomocí jednoduché abstraktní vrstvy
+* [Active Record](db-active-record.md): Aktivní záznam (ORM), načítání a manipulace se záznamy, definování vazeb 
+* [Migrace](db-migrations.md): Verzovaní databáze v týmovém vývojovém prostředí
 * [Sphinx](https://www.yiiframework.com/extension/yiisoft/yii2-sphinx/doc/guide)
 * [Redis](https://www.yiiframework.com/extension/yiisoft/yii2-redis/doc/guide)
 * [MongoDB](https://www.yiiframework.com/extension/yiisoft/yii2-mongodb/doc/guide)
 * [ElasticSearch](https://www.yiiframework.com/extension/yiisoft/yii2-elasticsearch/doc/guide)
 
 
-Getting Data from Users
------------------------
+Získávání dat od uživatele
+--------------------------
 
-* [Creating Forms](input-forms.md)
-* [Validating Input](input-validation.md)
-* [Uploading Files](input-file-upload.md)
-* [Collecting Tabular Input](input-tabular-input.md)
-* [Getting Data for Multiple Models](input-multiple-models.md)
-* [Extending ActiveForm on the Client Side](input-form-javascript.md)
+* [Vytváření formulářů](input-forms.md)
+* [Validace vstupu](input-validation.md)
+* [Nahrávání souborů](input-file-upload.md)
+* [Získávání více vstupů](input-tabular-input.md)
+* [Získání dat z více modelů](input-multiple-models.md)
+* [Rozšiřování ActiveForm na klientově straně](input-form-javascript.md)
 
 
-Displaying Data
+Zobrazování dat
 ---------------
 
-* [Data Formatting](output-formatting.md)
-* [Pagination](output-pagination.md)
-* [Sorting](output-sorting.md)
+* [Formátování dat](output-formatting.md)
+* [Stránkování](output-pagination.md)
+* [Třídění](output-sorting.md)
 * [Data Providers](output-data-providers.md)
-* [Data Widgets](output-data-widgets.md)
-* [Working with Client Scripts](output-client-scripts.md)
-* [Theming](output-theming.md)
+* [Widgety pro data](output-data-widgets.md)
+* [Práce s kódem na straně klienta](output-client-scripts.md)
+* [Témata](output-theming.md)
 
 
-Security
---------
+Zabezpečení
+-----------
 
-* [Security Overview](security-overview.md)
-* [Authentication](security-authentication.md)
-* [Authorization](security-authorization.md)
-* [Working with Passwords](security-passwords.md)
-* [Cryptography](security-cryptography.md)
+* [Přehled zabezpečení](security-overview.md)
+* [Autentifikace](security-authentication.md)
+* [Autorizace](security-authorization.md)
+* [Práce s heslem](security-passwords.md)
+* [Šifrování](security-cryptography.md)
 * [Auth Clients](https://www.yiiframework.com/extension/yiisoft/yii2-authclient/doc/guide)
 * [Best Practices](security-best-practices.md)
 
@@ -123,64 +123,64 @@ Security
 Caching
 -------
 
-* [Caching Overview](caching-overview.md)
-* [Data Caching](caching-data.md)
-* [Fragment Caching](caching-fragment.md)
-* [Page Caching](caching-page.md)
+* [Přehled cachingu](caching-overview.md)
+* [Caching dat](caching-data.md)
+* [Caching fragmentů](caching-fragment.md)
+* [Caching stránek](caching-page.md)
 * [HTTP Caching](caching-http.md)
 
 
-RESTful Web Services
+RESTful webové služby
 --------------------
 
-* [Quick Start](rest-quick-start.md)
-* [Resources](rest-resources.md)
-* [Controllers](rest-controllers.md)
-* [Routing](rest-routing.md)
-* [Response Formatting](rest-response-formatting.md)
-* [Authentication](rest-authentication.md)
-* [Rate Limiting](rest-rate-limiting.md)
-* [Versioning](rest-versioning.md)
-* [Error Handling](rest-error-handling.md)
+* [Úvod](rest-quick-start.md)
+* [Data / Zdroje](rest-resources.md)
+* [Kontrolery](rest-controllers.md)
+* [Routování](rest-routing.md)
+* [Formátování odpovědi](rest-response-formatting.md)
+* [Autentifikace](rest-authentication.md)
+* [Limitování požadavků](rest-rate-limiting.md)
+* [Verzování](rest-versioning.md)
+* [Zpracování errorů](rest-error-handling.md)
 
 
-Development Tools
+Vývojové nástroje
 -----------------
 
-* [Debug Toolbar and Debugger](https://www.yiiframework.com/extension/yiisoft/yii2-debug/doc/guide)
-* [Generating Code using Gii](https://www.yiiframework.com/extension/yiisoft/yii2-gii/doc/guide)
-* [Generating API Documentation](https://www.yiiframework.com/extension/yiisoft/yii2-apidoc)
+* [Debugovací panel nástrojů a Debugger](https://www.yiiframework.com/extension/yiisoft/yii2-debug/doc/guide)
+* [Generování kódu pomocí Gii](https://www.yiiframework.com/extension/yiisoft/yii2-gii/doc/guide)
+* [Generování API dokumentace](https://www.yiiframework.com/extension/yiisoft/yii2-apidoc)
 
 
-Testing
--------
+Testování
+---------
 
-* [Testing Overview](test-overview.md)
-* [Testing environment setup](test-environment-setup.md)
-* [Unit Tests](test-unit.md)
-* [Functional Tests](test-functional.md)
-* [Acceptance Tests](test-acceptance.md)
-* [Fixtures](test-fixtures.md)
+* [Přehled testování](test-overview.md)
+* [Nastavení testovacího prostředí](test-environment-setup.md)
+* [Unit testy](test-unit.md)
+* [Testy funkčnosti](test-functional.md)
+* [Akceptační testy](test-acceptance.md)
+* [Nastavení proměnných](test-fixtures.md)
 
 
-Special Topics
---------------
+Speciální témata
+----------------
 
-* [Advanced Project Template](https://www.yiiframework.com/extension/yiisoft/yii2-app-advanced/doc/guide)
-* [Building Application from Scratch](tutorial-start-from-scratch.md)
-* [Console Commands](tutorial-console.md)
-* [Core Validators](tutorial-core-validators.md)
+* [Pokročilá šablona projektu](https://www.yiiframework.com/extension/yiisoft/yii2-app-advanced/doc/guide)
+* [Vlastní struktura aplikace](tutorial-start-from-scratch.md)
+* [Konzolové příkazy](tutorial-console.md)
+* [Validace](tutorial-core-validators.md)
 * [Docker](tutorial-docker.md)
-* [Internationalization](tutorial-i18n.md)
-* [Mailing](tutorial-mailing.md)
-* [Performance Tuning](tutorial-performance-tuning.md)
-* [Shared Hosting Environment](tutorial-shared-hosting.md)
-* [Template Engines](tutorial-template-engines.md)
-* [Working with Third-Party Code](tutorial-yii-integration.md)
-* [Using Yii as a micro framework](tutorial-yii-as-micro-framework.md)
+* [Internacionalizace](tutorial-i18n.md)
+* [Posílání emailů](tutorial-mailing.md)
+* [Optimalizace rychlosti aplikace](tutorial-performance-tuning.md)
+* [Sdílené prostředí](tutorial-shared-hosting.md)
+* [Šablonovací nástroje](tutorial-template-engines.md)
+* [Práce s kódem třetí strany](tutorial-yii-integration.md)
+* [Používání Yii jako microframework](tutorial-yii-as-micro-framework.md)
 
 
-Widgets
+Widgety
 -------
 
 * [GridView](https://www.yiiframework.com/doc-2.0/yii-grid-gridview.html)
@@ -191,14 +191,14 @@ Widgets
 * [Menu](https://www.yiiframework.com/doc-2.0/yii-widgets-menu.html)
 * [LinkPager](https://www.yiiframework.com/doc-2.0/yii-widgets-linkpager.html)
 * [LinkSorter](https://www.yiiframework.com/doc-2.0/yii-widgets-linksorter.html)
-* [Bootstrap Widgets](https://www.yiiframework.com/extension/yiisoft/yii2-bootstrap/doc/guide)
-* [jQuery UI Widgets](https://www.yiiframework.com/extension/yiisoft/yii2-jui/doc/guide)
+* [Bootstrap Widgety](https://www.yiiframework.com/extension/yiisoft/yii2-bootstrap/doc/guide)
+* [jQuery UI Widgety](https://www.yiiframework.com/extension/yiisoft/yii2-jui/doc/guide)
 
 
-Helpers
--------
+Pomocné nástroje
+----------------
 
-* [Helpers Overview](helper-overview.md)
+* [Přehled pomocných nástrojů](helper-overview.md)
 * [ArrayHelper](helper-array.md)
 * [Html](helper-html.md)
 * [Url](helper-url.md)
